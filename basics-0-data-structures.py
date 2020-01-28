@@ -2,14 +2,19 @@
 # -*- coding: utf-8 -*-
 
 
-# int, float, string, list, dict
+## int, float, string, list, dict
 a,b,c,d,e = 17,17.5,"doesn't",[1,2,3],{"key":'value'}
 print(a,b,c,d,e)
 
-print("is 'a' an int?", isinstance(1,int))
+print("is 'a' an int?", isinstance(a,int))
+print("is 'a' a float?", isinstance(a,float))
+print("is 'a' a str?", isinstance(a,str))
+print("is 'c' a str?", isinstance(c,str))
+print("is 'd' a list?", isinstance(d,list))
+print("is 'd' a dict?", isinstance(d,dict))
 
 
-# class
+## class
 class Person(object):
     NAME = 'Person'
     ATTRIBUTES = ['gender', 'age', 'weight', 'height']
@@ -58,7 +63,7 @@ with Person("David") as p:
     print(p, p.name)
 
 
-# list functions
+## list and iterables: 
 l = list(range(1,11))
 print(l)
 ll = []

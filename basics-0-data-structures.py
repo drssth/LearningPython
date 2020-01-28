@@ -48,9 +48,11 @@ class Person(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         print('exit object {} {}'.format(Person.NAME, self.name))
         del self.name
+        # you may define some behavior when quitting
 
     def __del__(self):
-        print('delete object')
+        print('delete object {}'.format(Person.NAME))
+        # more content in this function can easily raise exceptions
 
 
 
